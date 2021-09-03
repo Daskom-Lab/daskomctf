@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daskom CTF</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Overpass+Mono:wght@300;400;700&display=swap');
+
+    html {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        background-color: #22543D;
+    }
+
+    code {
+        border-radius: 4px;
+        padding: 2px;
+        color: black;
+        background-color: #F6E05F;
+    }
+    a::after {
+        content: ' → ' attr(href); /* show an arrow before the href */
+    }
+
+    /* everything below is for demo appearances and not important to the concept */
+
+    a {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 2px solid #e4e2d9af;
+    }
+
+    a:hover {
+        border-bottom-color: #F6E05F;
+    }
+
+    .main-content {
+        height: calc(100% - 50px);
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        width: calc(100% - 500px);
+        font-family: 'Overpass Mono', monospace;
+    }
+
+    .title {
+        color: #9AE6B4;
+        font-size: larger;
+        text-align: center;
+        font-family: 'Merriweather Sans', sans-serif;
+    }
+
+    .details {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        color: #E6FFFA;
+        margin-top: 10px;
+        font-size: small;
+        background-color: #2F855A; 
+        overflow-x: auto;
+    }
+
+    .details-content {
+        margin: 10px;
+    }
+
+    @media only screen and (max-width: 1500px) {
+        .main-content {
+            margin-top: 30px;
+            height: calc(100% - 30px);
+            width: calc(100% - 300px);
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .main-content {
+            width: calc(100% - 200px);
+        }
+    }
+
+    @media only screen and (max-width: 650px) {
+        .main-content {
+            width: calc(100% - 50px);
+        }
+    }
+</style>
+<body>
+    <div class="main-content">
+        <span class="title">
+            <span style="color: #F6E05F"><b>Daskom1337 CTF</b></span> (created and hosted by daskom1337)
+        </span>
+
+        <div class="details">
+            <div class="details-content">
+                <div>
+                    <b>daskom ></b> cat hello.txt <br><br>
+                    ██████╗░░█████╗░████████╗███████╗░░███╗░░██████╗░██████╗░███████╗ <br>
+                    ██╔══██╗██╔══██╗╚══██╔══╝██╔════╝░████║░░╚════██╗╚════██╗╚════██║ <br>
+                    ██║░░██║██║░░╚═╝░░░██║░░░█████╗░░██╔██║░░░█████╔╝░█████╔╝░░░░██╔╝ <br>
+                    ██║░░██║██║░░██╗░░░██║░░░██╔══╝░░╚═╝██║░░░╚═══██╗░╚═══██╗░░░██╔╝░ <br>
+                    ██████╔╝╚█████╔╝░░░██║░░░██║░░░░░███████╗██████╔╝██████╔╝░░██╔╝░░ <br>
+                    ╚═════╝░░╚════╝░░░░╚═╝░░░╚═╝░░░░░╚══════╝╚═════╝░╚═════╝░░░╚═╝░░░ <br>
+                    Welcome to the first ever Daskom Capture The Flag, a place where you can practice, test, or even flex (lol) your scripting, coding, logical thinking, exploitation, and knowledge about computer science in general or even specific about something (<b>RegEx</b> for example).
+                </div>
+                <br>
+                <div>
+                    <b>daskom ></b> cat whats-ctf.txt <br><br>
+                    CTF or Capture the Flag is a game where you will find a flag, and a flag is actually just a simple string that sometimes should match a specific pattern, in this case its <code>dctf1337{.+}</code> unless specified in the challenge itself, you know what ? just go ahead and try to solve the <code>sanity check</code> challenge in <a href="http://ctf.daskomlab.com:31337/" target="_blank" rel="noopener noreferrer">the platform</a> and you will understand how this whole things works.
+                </div>
+                <br>
+                <div>
+                    <b>daskom ></b> su daskom1337
+                </div>
+                <div>
+                    <b>daskom1337 ></b> cat who-are-we.txt <br><br>
+                    <b>We basically consist of some of people from daskom laboratory</b> that somehow manage their way to love technology and some are even goes really far into it up to the level that we couldn't describe, so instead of finding and recruiting people from the wild, we created a community like this to share and learn knowledge together <b>(for free, because we are indonesian, and we love everything for free)</b>. <br><br>
+
+                    We are ofcourse the creator of this thing (and almost everything since 2017 in daskom were, are and probably will always be created by us) including the <a href="https://daskomlab.com/" target="_blank" rel="noopener noreferrer">daskomlab web application</a> that daskom is using for everyday's practicum. <br><br>
+
+                    We also have a <a href="https://www.youtube.com/channel/UCl51jsRs074Ve1cyXxrbhxA" target="_blank" rel="noopener noreferrer">youtube channel</a> with running lists of videos that will probably and hopefully gives you knowledge and understanding about (mostly) computer science related stuff. <br><br>
+
+                    We hold several events to give knowledge for free for all of you which are <a href="https://github.com/Daskom-Lab/weekend-crash-course" target="_blank" rel="noopener noreferrer">weekend crash course</a>, <a href="https://github.com/Daskom-Lab/2021-Academy" target="_blank" rel="noopener noreferrer">prochef academy</a> and this ctf.
+                </div>
+                <br>
+                <div>
+                    <b>daskom1337 ></b> cat how-to-join.txt <br><br>
+                    The only requirement to join our discord server is for you to actually become a daskom laboratory assitant first, and if you are or were, you can chat <a href="https://justak.id" target="_blank" rel="noopener noreferrer">[FAI 2017]</a> and (kindly) ask for the invitation link.
+                </div>
+                <br>
+                <div>
+                    <b>daskom1337 ></b> # Alright, enough for the chat lets dive in to the real deal
+                </div>
+                <div>
+                    <b>daskom1337 ></b> # Here i will be showing you the first flag for <code>sanity check v3</code> challenge, but not directly so you can learn something out of this
+                </div>
+                <div>
+                    <b>daskom1337 ></b> cat flag.txt | base64 | xxd -ps <br>
+                    5a474e305a6a457a4d7a6437593239755a334a6864485673595852706232 <br>
+                    357a58325977636c393562335679587a467a6446396d6247466e587a706a <br>
+                    624746774f6e304b0a <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
