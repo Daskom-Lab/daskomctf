@@ -1,0 +1,1 @@
+There are bunch of flags in the table you found in `a_trip_to_the_database` challenge, and there is one flag that seems a little bit unique (i think), because its actually has the shortest length of character, find it before the nasty hacker remove those flags. 
